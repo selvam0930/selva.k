@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <p>
+            <label for="username">USERNAME</label>
+            <input type="text" id="username" name="username" required>
+        </p>
+        <p>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required>
+        </p>
+        <p>
+            <label for="phonenumber">phone number</label>
+            <input type="tel" id="phonenumber" name="phonenumber" required pattern="[0-9] {3} [0-9] {4}">
+        </p>
+        <p>
+            <label for="decade">decade</label>
+            <input type="number" id="decade" name="decade" min="1900" max="2000" step="10" required>
+        </p>
+        <p>
+            <label for="fullstack"></label>
+            <select name="fullstack" id="fullstack" size="3">
+            <optgroup label="frontEnd" >
+                <option value="html">html</option>
+                <option value="css">Css</option>
+                <option value="javascript">javaScript</option>
+            </optgroup>
+            <optgroup label="backend">
+                <option value="java" >java</option>
+                <option value="python">Python</option>
+                <option value="ruby">ruby</option>
+                <option value="c#">c#</option>
+            </optgroup>
+            </select>
+
+            <p>
+
+            <label for="data">DATA</label>
+            <input type="text" id="data"  list="data-list">
+            <datalist id="data-list">
+                <option value="frontend">
+                <option value="backend">
+                <option value="database">
+                </p>
+            
+    </form>
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>radio button</legend>
+            <label for="male">male</label>
+            <input type="radio" id="male" name="gender" >
+
+            <p>
+                <label for="female">female</label>
+            <input type="radio" id="female" name="gender" >
+            </p>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>checklist</legend>
+            <label for="">chicken</label> 
+            <input type="checkbox"id="food">
+        </fieldset>
+    </form>
+</body>
+</html>
